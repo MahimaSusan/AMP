@@ -1,0 +1,29 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>AMP Example</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+</head>
+
+<body>
+    <h1>setery</h1>
+    <amp-img src="images/market.png" alt="Welcome" height="400" width="800"></amp-img>
+    <amp-img src="images/market.png" width="264" height="195" layout="fixed">
+        <noscript>
+            <img src="images/sunset.jpg" width="264" height="195" />
+        </noscript>
+    </amp-img>
+    <amp-img media="(max-width: 650px)" src="images/market.png" width="100" height="100" layout="responsive">
+    </amp-img>
+    <amp-anim width="245" height="300" src="images/gopher.gif" alt="an animation" attribution="The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.">
+        <amp-img placeholder width="245" height="300" src="images/market.png">
+        </amp-img>
+    </amp-anim>
+</body>
+
+</html>
