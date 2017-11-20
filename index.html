@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async src="extensions/amp-project.js"></script>
+    <script async custom-element="amp-sidebar" src="extensions/amp-sidebar.js"></script>
     <title>AMP Example</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -13,7 +14,52 @@
 </head>
 
 <body>
-    <h1>setery</h1>
+<amp-sidebar id="sidebar"
+  layout="nodisplay"
+  side="right">
+  <amp-img class="amp-close-image"
+    src="/img/ic_close_black_18dp_2x.png"
+    width="20"
+    height="20"
+    alt="close sidebar"
+    on="tap:sidebar.close"
+    role="button"
+    tabindex="0"></amp-img>
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li> Nav item 1</li>
+    <li>
+      <amp-fit-text width="220"
+        height="20"
+        layout="responsive"
+        max-font-size="24">
+        Nav item 2 - &lt;amp-fit-text&gt;
+      </amp-fit-text>
+    </li>
+    <li>
+      <amp-fit-text width="220"
+        height="20"
+        layout="responsive"
+        max-font-size="24">
+        Nav item 3 - &lt;amp-fit-text&gt; longer text
+      </amp-fit-text>
+    </li>
+    <li> Nav item 4 - Image
+      <amp-img class="amp-sidebar-image"
+        src="/img/favicon.png"
+        width="20"
+        height="20"
+        alt="an image"></amp-img>
+    </li>
+    <li> Nav item 5</li>
+    <li> Nav item 6</li>
+  </ul>
+</amp-sidebar>
+<button on="tap:sidebar.toggle"
+  class="ampstart-btn caps m2">Toggle sidebar</button>
+<!--     <h1>setery</h1>
     <amp-img src="images/market.png" alt="Welcome" height="400" width="800"></amp-img>
     <amp-img src="images/market.png" width="264" height="195" layout="fixed">
         <noscript>
@@ -25,7 +71,7 @@
     <amp-anim width="245" height="300" src="images/gopher.gif" alt="an animation" attribution="The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.">
         <amp-img placeholder width="245" height="300" src="images/market.png">
         </amp-img>
-    </amp-anim>
+    </amp-anim> -->
 </body>
 
 </html>
