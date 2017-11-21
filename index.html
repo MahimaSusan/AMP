@@ -13,8 +13,12 @@
     <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
           <style amp-custom>
-            body {
-                background-color: gray;
+            aside,
+            .contentWrapper {
+                display: inline-block;
+            }
+            aside {
+                width: 20%;
             }
          </style>
 </head>
@@ -55,7 +59,7 @@
     </amp-sidebar>
     <button on="tap:sidebar.toggle" class="ampstart-btn caps m2"><amp-img class="amp-close-image" src="images/hamburger.png" width="20" height="20" alt="hamburger" role="button" tabindex="0"></amp-img></button>
     <aside></aside>
-    <section>
+    <section class="contentWrapper">
     <h1>AMP - Accelereted Mobile Page</h1>
     <p>Open-source initiative aiming to make the web better for all</p>
     <p>Make websites fast, beautiful and high-performing across devices</p>
