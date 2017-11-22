@@ -7,7 +7,6 @@
     <title>AMP Example</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <link rel="manifest" href="/amp-app-banner-manifest.json">
-    <link rel="canonical" href="https://medium.com/google-developers/how-to-avoid-common-mistakes-when-publishing-accelerated-mobile-pages-9ea61abf530f">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
@@ -70,6 +69,15 @@
             <li> Nav item 6</li>
         </ul>
     </amp-sidebar>
+    <amp-app-banner layout="nodisplay" id="banner">
+        <div id="banner-logo">
+            <amp-img src="https://cdn-images-1.medium.com/max/50/1*JLegdtjFMNgqHgnxdd04fg.png" width="50" height="43" layout="fixed"></amp-img>
+        </div>
+        <div id="banner-text">Learn more about AMP in the Medium App.</div>
+        <div id="banner-action">
+            <button class="ampstart-btn mr1 caps" open-button>View in app</button>
+        </div>
+    </amp-app-banner>
     <aside>
         <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
             <amp-img class="amp-close-image" src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
