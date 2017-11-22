@@ -119,7 +119,12 @@
                 <li>a top-level <code>&lt;html ⚡&gt;</code> tag</li>
                 <li><code>&lt;script async src="https://cdn.ampproject.org/v0.js"&gt;&lt;/script&gt; tag </code></li>
                 <li><code>&lt;link rel="canonical" href="$SOME_URL"&gt;</code> tag inside their &lt;head&gt;</li>
-                <li>Contain the AMP boilerplate code in their <code>&lt;head&gt;</code> tag.</li>
+                <li>Contain the AMP boilerplate code in their <code>&lt;head&gt;</code> tag.
+                <ul>
+                    <li>
+                    This code itself is to hide the page until it is fully rendered, and then fade it in to give a higher perceived performance metric.
+                    </li>
+                </ul></li>
             </ul>
         </div>
     </section>
