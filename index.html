@@ -28,6 +28,9 @@
                 display: inline-block;
                 vertical-align: top;
             }
+            aside div {
+                position: fixed;
+            }
             .content-wrapper {
                 padding-left: 50px;
                 padding-top: 100px;
@@ -96,9 +99,11 @@
     </amp-sidebar>
     <section class="outer-wrapper">
     <aside>
+    <div>
         <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
             <amp-img class="amp-close-image" src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
         </button>
+        </div>
     </aside>
     <section class="content-wrapper">
         <h1>AMP - Accelereted Mobile Page</h1>
