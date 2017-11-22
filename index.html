@@ -45,6 +45,9 @@
             h1 {
                 font-size: 34px;
             }
+            .side-menu {
+                list-style: none;
+            }
             @media screen and (max-width:1024px) {
                 .content-wrapper {
                     padding: 0;
@@ -56,7 +59,7 @@
 <body>
     <amp-sidebar id="sidebar" layout="nodisplay" side="right">
         <amp-img class="amp-close-image amplogo" src="images/close.png" width="20" height="20" alt="close sidebar" on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
-        <ul>
+        <ul class="side-menu">
             <li>
                 <amp-accordion disable-session-states>
                     <section>
