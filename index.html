@@ -67,6 +67,13 @@
             .responsive-img {
                 height: 100px;
             }
+            .on-example {
+                background: rgba(3, 169, 244, 0.22);
+                outline: none;
+                border: 1px solid #03A9F4;
+                border-radius: 8px;
+                padding: 10px;
+            }
             @media screen and (max-width:1024px) {
                 .content-wrapper {
                     padding: 100px 5%;
@@ -250,7 +257,7 @@
             <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
             <div>
             <div id="warning-message">Warning...</div>
-            <button on="tap:warning-message.hide">Cool, thanks!</button>
+            <button on="tap:warning-message.hide" class="on-example">Cool, thanks!</button>
             <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
             </div>
         </section>
