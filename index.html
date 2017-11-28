@@ -247,10 +247,12 @@
             </div>
             <h2 id="actionEvent">Actions and events in AMP</h2>
             <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element.</p> The value for the syntax is a simple domain-specific language of the form:
-                <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
-                <div id="warning-message">Warning...</div>
-
-<button on="tap:warning-message.hide">Cool, thanks!</button>
+            <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
+            <div>
+            <div id="warning-message">Warning...</div>
+            <button on="tap:warning-message.hide">Cool, thanks!</button>
+            <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
+            </div>
         </section>
     </section>
 </body>
