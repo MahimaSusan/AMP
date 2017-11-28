@@ -246,9 +246,11 @@
                 </div>
             </div>
             <h2 id="actionEvent">Actions and events in AMP</h2>
-            <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element. The value for the syntax is a simple domain-specific language of the form:
+            <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element.</p> The value for the syntax is a simple domain-specific language of the form:
                 <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
-            </p>
+                <div id="warning-message">Warning...</div>
+
+<button on="tap:warning-message.hide">Cool, thanks!</button>
         </section>
     </section>
 </body>
