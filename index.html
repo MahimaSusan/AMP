@@ -102,7 +102,7 @@
             <li><a href="#htmlTags">AMP HTML Specification</a></li>
             <li>
                 <amp-fit-text width="220" height="20" layout="responsive" max-font-size="24">
-                    amp-fit-text
+                    Text scales to fit area
                 </amp-fit-text>
             </li>
             <li>
@@ -256,11 +256,14 @@
             <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element.</p> The value for the syntax is a simple domain-specific language of the form:
             <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
             <div>
-            <div id="warning-message">Warning...</div>
-            <button on="tap:warning-message.hide" class="on-example">Cool, thanks!</button>
-            <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
+                <div id="warning-message">Warning...</div>
+                <button on="tap:warning-message.hide" class="on-example">Cool, thanks!</button>
+                <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
             </div>
             <h2>amp-fit-text</h2>
+            <p>Expands or shrinks its font size to fit the content within the space given to it.</p>
+            <h3>Supported Layouts</h3>
+            <p>fill, fixed, fixed-height, flex-item, nodisplay, responsive</p>
             <amp-img src="images/amp-fit.png" width="700" height="70" layout="responsive" alt="amp fit text"></amp-img>
         </section>
     </section>
