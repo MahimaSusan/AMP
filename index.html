@@ -130,154 +130,154 @@
         </ul>
     </amp-sidebar>
     <section class="nav-bar">
-            <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
-                <amp-img src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
-            </button>
+        <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
+            <amp-img src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
+        </button>
     </section>
-        <section class="content-wrapper">
-            <h1>AMP - Accelereted Mobile Page</h1>
+    <section class="content-wrapper">
+        <h1>AMP - Accelereted Mobile Page</h1>
+        <ul>
+            <li>Open-source initiative aiming to make the web better for all</li>
+            <li>Speeding up the delivery of content through the use of stripped down code known as <b>AMP HTML</b></li>
+            <li>Make websites fast, beautiful and high-performing across devices</li>
+            <li>AMP is a way to build web pages for <b>static content</b></li>
+        </ul>
+        <div id="ampHtml">
+            <h2>AMP HTML</h2>
+            <amp-img src="images/amp-html.png" width="1080" height="610" layout="responsive" alt="AMP"></amp-img>
+            <p><b>AMP HTML</b> is HTML with some restrictions for reliable performance.</p>
             <ul>
-                <li>Open-source initiative aiming to make the web better for all</li>
-                <li>Speeding up the delivery of content through the use of stripped down code known as <b>AMP HTML</b></li>
-                <li>Make websites fast, beautiful and high-performing across devices</li>
-                <li>AMP is a way to build web pages for <b>static content</b></li>
+                <li>Start with the <code>&lt;!doctype html&gt;</code></li>
+                <li>a top-level <code>&lt;html ⚡&gt;</code> tag</li>
+                <li><code>&lt;script async src="https://cdn.ampproject.org/v0.js"&gt;&lt;/script&gt; tag </code></li>
+                <li><code>&lt;link rel="canonical" href="$SOME_URL"&gt;</code> tag inside their &lt;head&gt;</li>
+                <li>Contain the AMP boilerplate code in their <code>&lt;head&gt;</code> tag.
+                    <ul>
+                        <li>
+                            This code itself is to hide the page until it is fully rendered, and then fade it in to give a higher perceived performance metric.
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            <div id="ampHtml">
-                <h2>AMP HTML</h2>
-                <amp-img src="images/amp-html.png" width="1080" height="610" layout="responsive" alt="AMP"></amp-img>
-                <p><b>AMP HTML</b> is HTML with some restrictions for reliable performance.</p>
+            <div class="amp-components">
+                <h3>Tags and Components</h3>
+                <p> Two types of AMP supported components</p>
                 <ul>
-                    <li>Start with the <code>&lt;!doctype html&gt;</code></li>
-                    <li>a top-level <code>&lt;html ⚡&gt;</code> tag</li>
-                    <li><code>&lt;script async src="https://cdn.ampproject.org/v0.js"&gt;&lt;/script&gt; tag </code></li>
-                    <li><code>&lt;link rel="canonical" href="$SOME_URL"&gt;</code> tag inside their &lt;head&gt;</li>
-                    <li>Contain the AMP boilerplate code in their <code>&lt;head&gt;</code> tag.
-                        <ul>
-                            <li>
-                                This code itself is to hide the page until it is fully rendered, and then fade it in to give a higher perceived performance metric.
-                            </li>
-                        </ul>
-                    </li>
+                    <li>Built-in</li>
+                    <li>Extended</li>
                 </ul>
-                <div class="amp-components">
-                    <h3>Tags and Components</h3>
-                    <p> Two types of AMP supported components</p>
-                    <ul>
-                        <li>Built-in</li>
-                        <li>Extended</li>
-                    </ul>
-                    <h4>Built-in</h4>
-                    <amp-img src="images/image-responsive.jpg" class="responsive-img" alt="responsive" height="400" width="400" layout="responsive"></amp-img>
-                    <amp-img src="images/builtin.png" width="1080" height="190" layout="responsive" alt="builtin"></amp-img>
-                    <amp-img src="images/responsive.png" width="264" height="195" layout="fixed">
-                        <noscript>
-                            <img src="images/media-screen.jpg" width="264" height="195" />
-                        </noscript>
+                <h4>Built-in</h4>
+                <amp-img src="images/image-responsive.jpg" class="responsive-img images" alt="responsive" height="400" width="400" layout="responsive"></amp-img>
+                <amp-img src="images/builtin.png" width="1080" height="190" layout="responsive" alt="builtin" class="images"></amp-img>
+                <amp-img src="images/responsive.png" width="264" height="195" layout="fixed" class="images">
+                    <noscript>
+                        <img src="images/media-screen.jpg" width="264" height="195" />
+                    </noscript>
+                </amp-img>
+                <amp-img media="(max-width: 1024px)" src="images/media-screen.jpg" width="300" height="300" layout="fixed" alt="an image" class="images">
+                </amp-img>
+                <h4>Extended</h4>
+                <amp-anim class="extended-component" width="245" height="300" src="images/anim-image.gif" alt="an animation" attribution="The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.">
+                    <amp-img placeholder width="245" height="300" src="images/media-screen.jpg">
                     </amp-img>
-                    <amp-img media="(max-width: 1024px)" src="images/media-screen.jpg" width="300" height="300" layout="fixed" alt="an image">
-                    </amp-img>
-                    <h4>Extended</h4>
-                    <amp-anim class="extended-component" width="245" height="300" src="images/anim-image.gif" alt="an animation" attribution="The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.">
-                        <amp-img placeholder width="245" height="300" src="images/media-screen.jpg">
-                        </amp-img>
-                    </amp-anim>
-                    <amp-ad class="extended-component" width=300 height=250 type="a9" data-aax_size="300x250" data-aax_pubname="abc123" data-aax_src="302">
-                    </amp-ad>
-                    <amp-img src="images/extended.png" width="1080" height="190" layout="responsive" alt="extended"></amp-img>
-                    <ul>
-                        <li>amp-img</li>
-                        <li>amp-audio</li>
-                        <li>amp-accordion</li>
-                        <li>amp-facebook</li>
-                        <li>amp-iframe</li>
-                        <li>amp-instagram</li>
-                        <li>amp-form</li>
-                        <li>amp-font</li>
-                        <li>amp-bind</li>
-                        <li>amp-anim</li>
-                        <li>amp-fit-text</li>
-                        <li>amp-selector</li>
-                        <li>amp-sidebar</li>
-                        <li>amp-video</li>
-                    </ul>
-                </div>
-                <h2>Attributes</h2>
-                <h3>Not allowed</h3>
+                </amp-anim>
+                <amp-ad class="extended-component" width=300 height=250 type="a9" data-aax_size="300x250" data-aax_pubname="abc123" data-aax_src="302">
+                </amp-ad>
+                <amp-img src="images/extended.png" width="1080" height="190" layout="responsive" alt="extended"></amp-img>
                 <ul>
-                    <li>Conditional HTML comments</li>
-                    <li>Attributes starting with ‘on’</li>
-                    <li>XML related attributes</li>
-                    <li>Internal AMP attributes prefixed with i-amp-</li>
+                    <li>amp-img</li>
+                    <li>amp-audio</li>
+                    <li>amp-accordion</li>
+                    <li>amp-facebook</li>
+                    <li>amp-iframe</li>
+                    <li>amp-instagram</li>
+                    <li>amp-form</li>
+                    <li>amp-font</li>
+                    <li>amp-bind</li>
+                    <li>amp-anim</li>
+                    <li>amp-fit-text</li>
+                    <li>amp-selector</li>
+                    <li>amp-sidebar</li>
+                    <li>amp-video</li>
                 </ul>
-                <h2>Classes and IDs</h2>
-                <h3>Disallowed</h3>
-                <span>Classes and IDs with -amp- and i-amp-</span>
-                <h2>Stylesheets</h2>
-                <ul>
-                    <li>allowed</li>
-                    <ul>
-                        <li>@font-face, @keyframes, @media, @support</li>
-                    </ul>
-                    <li>Disallowed</li>
-                    <ul>
-                        <li>@import</li>
-                        <li>!important</li>
-                    </ul>
-                    <li>Custom styles need to be added inside <code>&lt;style amp-custom&gt;</code> tag</li>
-                </ul>
-                <h2>CSS properties that are permanently banned</h2>
-                <ul>
-                    <li>behavior</li>
-                    <li>moz-binding</li>
-                    <li>transform</li>
-                    <li>overflow may not be styled as ‘auto’ or ‘scroll’</li>
-                </ul>
-                <h2>Maximum Size CSS</h2>
-                <span>50,000 bytes</span>
-                <h2>Custom Fonts</h2>
-                <ul>
-                    <li>Typography.com: <b>https://cloud.typography.com</b></li>
-                    <li>Fonts.com: <b>https://fast.fonts.net</b></li>
-                    <li>Google Fonts: <b>https://fonts.googleapis.com</b></li>
-                    <li>Typekit: <b>https://use.typekit.net</b></li>
-                    <li>Font Awesome: <b>https://maxcdn.bootstrapcdn.com</b></li>
-                </ul>
-                <h2>Common Attributes</h2>
-                <p>layout, width, height, media, placeholder, fallback</p>
-                <h2>AMP Validator</h2>
-                <ul>
-                    <li>Append <b>#development=1</b> to the URL</li>
-                    <li>Browser Extension
-                        <a target="_blank" href="https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc">Extension link</a>
-                    </li>
-                </ul>
-                <h2 id="htmlTags">HTML Tags</h2>
-                <amp-img src="images/html-tags.png" width="800" height="2000" layout="responsive" alt="HTML tags"></amp-img>
-                <h2 id="ampJS">AMP JS</h2>
-                <p>The <b>AMP JS</b> library ensures the fast rendering of AMP HTML pages.</p>
-                <h2 id="ampCache">AMP Cache</h2>
-                <p>The <b>Google AMP Cache</b> can be used to serve cached AMP HTML pages.</p>
-                <div class="m1">
-                    <amp-social-share type="twitter" width="30" height="22"></amp-social-share>
-                    <amp-social-share type="facebook" width="30" height="22" data-attribution="254325784911610"></amp-social-share>
-                    <amp-social-share type="gplus" width="30" height="22"></amp-social-share>
-                    <amp-social-share type="email" width="30" height="22"></amp-social-share>
-                    <amp-social-share type="pinterest" width="33" height="22"></amp-social-share>
-                </div>
             </div>
-            <h2 id="actionEvent">Actions and events in AMP</h2>
-            <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element.</p> The value for the syntax is a simple domain-specific language of the form:
-            <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
-            <div>
-                <div id="warning-message">Warning...</div>
-                <button on="tap:warning-message.hide" class="on-example">Cool, thanks!</button>
-                <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
+            <h2>Attributes</h2>
+            <h3>Not allowed</h3>
+            <ul>
+                <li>Conditional HTML comments</li>
+                <li>Attributes starting with ‘on’</li>
+                <li>XML related attributes</li>
+                <li>Internal AMP attributes prefixed with i-amp-</li>
+            </ul>
+            <h2>Classes and IDs</h2>
+            <h3>Disallowed</h3>
+            <span>Classes and IDs with -amp- and i-amp-</span>
+            <h2>Stylesheets</h2>
+            <ul>
+                <li>allowed</li>
+                <ul>
+                    <li>@font-face, @keyframes, @media, @support</li>
+                </ul>
+                <li>Disallowed</li>
+                <ul>
+                    <li>@import</li>
+                    <li>!important</li>
+                </ul>
+                <li>Custom styles need to be added inside <code>&lt;style amp-custom&gt;</code> tag</li>
+            </ul>
+            <h2>CSS properties that are permanently banned</h2>
+            <ul>
+                <li>behavior</li>
+                <li>moz-binding</li>
+                <li>transform</li>
+                <li>overflow may not be styled as ‘auto’ or ‘scroll’</li>
+            </ul>
+            <h2>Maximum Size CSS</h2>
+            <span>50,000 bytes</span>
+            <h2>Custom Fonts</h2>
+            <ul>
+                <li>Typography.com: <b>https://cloud.typography.com</b></li>
+                <li>Fonts.com: <b>https://fast.fonts.net</b></li>
+                <li>Google Fonts: <b>https://fonts.googleapis.com</b></li>
+                <li>Typekit: <b>https://use.typekit.net</b></li>
+                <li>Font Awesome: <b>https://maxcdn.bootstrapcdn.com</b></li>
+            </ul>
+            <h2>Common Attributes</h2>
+            <p>layout, width, height, media, placeholder, fallback</p>
+            <h2>AMP Validator</h2>
+            <ul>
+                <li>Append <b>#development=1</b> to the URL</li>
+                <li>Browser Extension
+                    <a target="_blank" href="https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc">Extension link</a>
+                </li>
+            </ul>
+            <h2 id="htmlTags">HTML Tags</h2>
+            <amp-img src="images/html-tags.png" width="800" height="2000" layout="responsive" alt="HTML tags"></amp-img>
+            <h2 id="ampJS">AMP JS</h2>
+            <p>The <b>AMP JS</b> library ensures the fast rendering of AMP HTML pages.</p>
+            <h2 id="ampCache">AMP Cache</h2>
+            <p>The <b>Google AMP Cache</b> can be used to serve cached AMP HTML pages.</p>
+            <div class="m1">
+                <amp-social-share type="twitter" width="30" height="22"></amp-social-share>
+                <amp-social-share type="facebook" width="30" height="22" data-attribution="254325784911610"></amp-social-share>
+                <amp-social-share type="gplus" width="30" height="22"></amp-social-share>
+                <amp-social-share type="email" width="30" height="22"></amp-social-share>
+                <amp-social-share type="pinterest" width="33" height="22"></amp-social-share>
             </div>
-            <h2 id="fitText">amp-fit-text</h2>
-            <p>Expands or shrinks its font size to fit the content within the space given to it.</p>
-            <h3>Supported Layouts</h3>
-            <p>fill, fixed, fixed-height, flex-item, nodisplay, responsive</p>
-            <amp-img src="images/amp-fit.png" width="700" height="70" layout="responsive" alt="amp fit text"></amp-img>
-        </section>
+        </div>
+        <h2 id="actionEvent">Actions and events in AMP</h2>
+        <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element.</p> The value for the syntax is a simple domain-specific language of the form:
+        <code>eventName:targetId[.methodName[(arg1=value, arg2=value)]]</code>
+        <div>
+            <div id="warning-message">Warning...</div>
+            <button on="tap:warning-message.hide" class="on-example">Cool, thanks!</button>
+            <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
+        </div>
+        <h2 id="fitText">amp-fit-text</h2>
+        <p>Expands or shrinks its font size to fit the content within the space given to it.</p>
+        <h3>Supported Layouts</h3>
+        <p>fill, fixed, fixed-height, flex-item, nodisplay, responsive</p>
+        <amp-img src="images/amp-fit.png" width="700" height="70" layout="responsive" alt="amp fit text"></amp-img>
+    </section>
 </body>
 </html>
