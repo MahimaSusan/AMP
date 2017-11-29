@@ -101,9 +101,11 @@
             </li>
             <li><a href="#htmlTags">AMP HTML Specification</a></li>
             <li>
-                <amp-fit-text width="220" height="20" layout="responsive" max-font-size="24">
-                    Text scales to fit area
-                </amp-fit-text>
+                <a href="#fitText">
+                    <amp-fit-text width="220" height="20" layout="responsive" max-font-size="24">
+                        Text scales to fit area
+                    </amp-fit-text>
+                </a>
             </li>
             <li>
                 <a href="#actionEvent">Actions and Evenets in AMP</a>
@@ -260,7 +262,7 @@
                 <button on="tap:warning-message.hide" class="on-example">Cool, thanks!</button>
                 <amp-img src="images/on-example.png" width="700" height="70" layout="responsive" alt="on"></amp-img>
             </div>
-            <h2>amp-fit-text</h2>
+            <h2 id="fitText">amp-fit-text</h2>
             <p>Expands or shrinks its font size to fit the content within the space given to it.</p>
             <h3>Supported Layouts</h3>
             <p>fill, fixed, fixed-height, flex-item, nodisplay, responsive</p>
