@@ -74,6 +74,18 @@
                 border-radius: 8px;
                 padding: 10px;
             }
+            .nav-bar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #fff;
+                z-index: 2;
+            }
+            .nav-bar button {
+                outline: none;
+                border: none;
+                background: #fff;
+            }
             @media screen and (max-width:1024px) {
                 .content-wrapper {
                     padding: 100px 5%;
@@ -117,14 +129,14 @@
             <li> Nav item 6</li>
         </ul>
     </amp-sidebar>
+    <section class="nav-bar">
+        <div>
+            <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
+                <amp-img src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
+            </button>
+        </div>
+    </section>
     <section class="outer-wrapper">
-        <aside>
-            <div>
-                <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
-                    <amp-img src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
-                </button>
-            </div>
-        </aside>
         <section class="content-wrapper">
             <h1>AMP - Accelereted Mobile Page</h1>
             <p>Open-source initiative aiming to make the web better for all</p>
