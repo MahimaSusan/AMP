@@ -287,8 +287,20 @@
             <h3>width</h3>
             <h3>height</h3>
             <h3>media</h3>
+            <p>All AMP elements support the media attribute. The value of media is a media query. If the query does not match, the element is not rendered and its resources and potentially its child resources will not be fetched. If the browser window changes size or orientation, the media queries are re-evaluated and elements are hidden and shown based on the new results.</p>
+            <h3>noloading</h3>
+            <p>The noloading attribute indicates whether the "loading indicator" should be turned off for this element. Many AMP elements show a "loading indicator", which is a basic animation that shows that the element has not yet fully loaded.</p>
             <h3>placeholder</h3>
+            <p>The placeholder attribute indicates that the element marked with this attribute acts as a placeholder for the parent AMP element.</p>
             <h3>fallback</h3>
+            <p>You can specify the <b>fallback</b> attribute on an element to indicate the fallback behavior:</p>
+            <ul>
+                <li>for any element the browser doesn’t support</li>
+                <li>if the content fails to load</li>
+                <li>if the image type is unsupported</li>
+            </ul>
+            <p>You can set the fallback attribute on any HTML element, not just AMP elements. If specified, the fallback element must be a direct child of the AMP element.</p>
+            <amp-img src="images/fallback.png" width="1000" height="250" layout="responsive" alt="amp fit text"></amp-img>
             <h2>AMP Validator</h2>
             <ul>
                 <li>Append <b>#development=1</b> to the URL</li>
