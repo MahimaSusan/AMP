@@ -26,14 +26,10 @@
             margin: 0 auto;
             max-width: 2000px;
           }
-            aside,
             .content-wrapper,
             .amp-components .extended-component {
                 display: inline-block;
                 vertical-align: top;
-            }
-            aside div {
-                position: fixed;
             }
             .content-wrapper {
                 padding-left: 50px;
@@ -41,15 +37,6 @@
                 border-left: 1px solid #dadada;
                 width: 80%;
                 float: right;
-            }
-            aside {
-                width: 20%;
-            }
-            aside button {
-                width: 90%;
-                border: none;
-                outline: none;
-                background: transparent;
             }
             .amplogo {
                 width: 75%;
@@ -130,11 +117,9 @@
         </ul>
     </amp-sidebar>
     <section class="nav-bar">
-        <div>
             <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
                 <amp-img src="images/AMP.jpg" width="200" height="100" alt="hamburger" role="button" tabindex="0"></amp-img>
             </button>
-        </div>
     </section>
     <section class="outer-wrapper">
         <section class="content-wrapper">
