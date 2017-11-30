@@ -125,6 +125,11 @@
                 padding-top: 0;
                 border: none;
             }
+            .nav-var-wrapper button,
+            .nav-var-wrapper .amp-logo {
+                display: inline-block;
+                vertical-align: middle;
+            }
          </style>
 </head>
 
@@ -158,10 +163,12 @@
         </ul>
     </amp-sidebar>
     <section class="nav-bar">
+    <div class="nav-var-wrapper">
         <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
             <amp-img src="images/hamburger.png" width="50" height="50" alt="hamburger" role="button" tabindex="0"></amp-img>
         </button>
-        <amp-img src="images/amp.jpg" width="150" height="75" alt="amp logo"></amp-img>
+        <amp-img src="images/amp.jpg" width="150" height="75" alt="amp logo" class="amp-logo"></amp-img>
+        </div>
     </section>
     <section class="content-wrapper">
         <h1>AMP - Accelereted Mobile Page</h1>
