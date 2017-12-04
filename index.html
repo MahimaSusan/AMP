@@ -339,6 +339,20 @@
                     <a target="_blank" href="https://amp.cloudflare.com/">Cloudflare AMP Cache</a>
                 </li>
             </ul>
+            <p>As a publisher, you don't choose an AMP Cache, it's actually the platform that links to your content that chooses the AMP Cache (if any) to use.</p>
+            <p>Caching is a core part of the AMP ecosystem. Publishing a valid AMP document automatically opts it into cache delivery.</p>
+            <h3>How does my AMP page get cached?</h3>
+            <ul>
+                <li>Platform discovery</li>
+                <li>Cache URL request
+                <ul>
+                    <li>Cloudflare AMP Cache URL example:<br>
+                    <code>https://amp.cloudflare.com/c/foo.com/amp_document.html</code></li>
+                    <li>Google AMP Cache URL example:<br>
+                    <code>https://foo-com.cdn.ampproject.org/c/s/foo.com/amp_document.html</code></li>
+                </ul></li>
+                <li>Publisher addition</li>
+            </ul>
         </div>
         <h2 id="actionEvent">Actions and events in AMP</h2>
         <p>The on attribute is used to install event handlers on elements. The events that are supported depend on the element.</p> The value for the syntax is a simple domain-specific language of the form:
