@@ -1,14 +1,16 @@
-<amp-video controls width="640" height="360" src="videos/kitten-playing.mp4" poster="images/kitten-playing.png">
-    <div fallback>
-        <p>This browser does not support the video element.</p>
-    </div>
-</amp-video>
-
-
-..................................................................................................................
-
-
-
-<amp-img alt="Mountains" width="550" height="368" layout="responsive" src="images/mountains.webp">
-    <amp-img alt="Mountains" fallback width="550" height="368" layout="responsive" src="images/mountains.jpg"></amp-img>
-</amp-img>
+{
+  "ampUrls": [
+    {
+      "originalUrl": "https://www.example.org/article-with-amp-version",
+      "ampUrl": "https://www.example.org/article-with-amp-version/amp",
+      "cdnAmpUrl": "https://www-example-org.cdn.ampproject.org/c/s/www.example.org/article-with-amp-version"
+    }
+  ],
+  "urlErrors": [
+    {
+      "errorCode": "NO_AMP_URL",
+      "errorMessage": "AMP URL not found.",
+      "originalUrl": "http://www.example.com/no-amp-version.html"
+    }
+  ]
+}
