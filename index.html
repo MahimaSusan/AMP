@@ -164,11 +164,11 @@
         </ul>
     </amp-sidebar>
     <section class="nav-bar">
-    <div class="nav-var-wrapper">
-        <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
-            <amp-img src="images/hamburger.png" width="50" height="50" alt="hamburger" role="button" tabindex="0"></amp-img>
-        </button>
-        <amp-img src="images/amp.jpg" width="150" height="75" alt="amp logo" class="amp-logo"></amp-img>
+        <div class="nav-var-wrapper">
+            <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
+                <amp-img src="images/hamburger.png" width="50" height="50" alt="hamburger" role="button" tabindex="0"></amp-img>
+            </button>
+            <amp-img src="images/amp.jpg" width="150" height="75" alt="amp logo" class="amp-logo"></amp-img>
         </div>
     </section>
     <section class="content-wrapper">
@@ -251,11 +251,9 @@
             <h3>Not allowed</h3>
             <ul>
                 <li>Conditional HTML comments
-                <p>
-                    &lt;!--[if IE 6]&gt;
-                    Special instructions for IE 6 here
-                    &lt;![endif]--&gt;
-                </p>
+                    <p>
+                        &lt;!--[if IE 6]&gt; Special instructions for IE 6 here &lt;![endif]--&gt;
+                    </p>
                 </li>
                 <li>Attributes starting with ‘on’</li>
                 <li>XML related attributes</li>
@@ -328,37 +326,40 @@
             <amp-img src="images/html-tags.png" width="800" height="2000" layout="responsive" alt="HTML tags"></amp-img>
             <h2 id="ampJS">AMP JS</h2>
             <ul>
-            <li>The <b>AMP JS</b> library ensures the fast rendering of AMP HTML pages.</li>
+                <li>The <b>AMP JS</b> library ensures the fast rendering of AMP HTML pages.</li>
                 <li>AMP allows only asynchronous JavaScript.</li>
                 <li>AMP pages can’t include any author-written JavaScript.</li>
-                <li>We can use third party JS, but it will make the AMP perfomance bad<br>
-                <code>document.write('&lt;script src="' + src + '" type="text/javascript">\/script>'):</code></li>
+                <li>We can use third party JS, but it will make the AMP performance bad
+                    <br>
+                    <code>document.write('&lt;script src="' + src + '" type="text/javascript">\/script>'):</code></li>
             </ul>
             <h2 id="ampCache">AMP Cache</h2>
             <p>The <b>Google AMP Cache</b> can be used to serve cached AMP HTML pages.</p>
             <amp-img src="images/rel-amphtml-usage.png" width="900" height="600" layout="responsive" alt="on"></amp-img>
-            <!-- <h3>two AMP Cache providers</h3>
+            <h3>two AMP Cache providers</h3>
             <ul>
                 <li>
-                <a target="_blank" href="https://developers.google.com/amp/cache/">Google AMP Cache</a>
-                <amp-img src="images/amp-cache.png" width="1000" height="300" layout="responsive" alt="on"></amp-img>
+                    <a target="_blank" href="https://developers.google.com/amp/cache/reference/acceleratedmobilepageurl/rest/v1/ampUrls/batchGet">Google AMP Cache</a>
                 </li>
                 <li>
                     <a target="_blank" href="https://amp.cloudflare.com/">Cloudflare AMP Cache</a>
                 </li>
-            </ul> -->
+            </ul>
             <p>As a publisher, you don't choose an AMP Cache, it's actually the platform that links to your content that chooses the AMP Cache (if any) to use.</p>
             <p>Caching is a core part of the AMP ecosystem. Publishing a valid AMP document automatically opts it into cache delivery.</p>
             <h3>How does my AMP page get cached?</h3>
             <ul>
                 <li>Platform discovery</li>
                 <li>Cache URL request
-                <ul>
-                    <li>Cloudflare AMP Cache URL example:<br>
-                    <code>https://amp.cloudflare.com/c/foo.com/amp_document.html</code></li>
-                    <li>Google AMP Cache URL example:<br>
-                    <code>https://foo-com.cdn.ampproject.org/c/s/foo.com/amp_document.html</code></li>
-                </ul></li>
+                    <ul>
+                        <li>Cloudflare AMP Cache URL example:
+                            <br>
+                            <code>https://amp.cloudflare.com/c/foo.com/amp_document.html</code></li>
+                        <li>Google AMP Cache URL example:
+                            <br>
+                            <code>https://foo-com.cdn.ampproject.org/c/s/foo.com/amp_document.html</code></li>
+                    </ul>
+                </li>
                 <li>Publisher addition</li>
             </ul>
         </div>
